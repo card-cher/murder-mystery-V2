@@ -1,0 +1,78 @@
+{
+  "_comment": "Maps levelID + chapterIndex to a sketch-style scene image, and levelID to a 3-4 panel conclusion comic. Swap any placeholder URL for a real illustration and nothing else needs to change — the loader (loadSceneAsset / loadConclusionAssets in script.js) just reads this file at runtime.",
+
+  "scenes": {
+    "easy": {
+      "1": {
+        "url": "https://images.placeholders.dev/?width=900&height=560&text=Voss+Estate+Library&bgColor=%23e7dcc3&textColor=%231c1a17",
+        "alt": "Pencil-sketch of the Voss Estate library, a shattered display case at its center",
+        "caption": "THE SCENE — Voss Estate Library"
+      },
+      "2": {
+        "url": "https://images.placeholders.dev/?width=900&height=560&text=Victim%27s+Coat+Lining&bgColor=%23e7dcc3&textColor=%231c1a17",
+        "alt": "Sketch of a folded coded note tucked into a coat lining",
+        "caption": "THE EVIDENCE — Coded Note"
+      },
+      "3": {
+        "url": "https://images.placeholders.dev/?width=900&height=560&text=Harbor+Wharf+Office&bgColor=%23e7dcc3&textColor=%231c1a17",
+        "alt": "Sketch of a dockmaster's office terminal glowing in a dark harbor building",
+        "caption": "THE TRAIL — Wharf Office"
+      }
+    },
+    "medium": {
+      "1": {
+        "url": "https://images.placeholders.dev/?width=900&height=560&text=Blackwood+Trust+Vaults&bgColor=%23e7dcc3&textColor=%231c1a17",
+        "alt": "Sketch of four breached bank vaults in a dim corridor",
+        "caption": "THE SCENE — Blackwood Trust"
+      },
+      "2": {
+        "url": "https://images.placeholders.dev/?width=900&height=560&text=Second+Cipher+Note&bgColor=%23e7dcc3&textColor=%231c1a17",
+        "alt": "Sketch of a second coded note pinned to a corkboard",
+        "caption": "THE EVIDENCE — Second Note"
+      },
+      "3": {
+        "url": "https://images.placeholders.dev/?width=900&height=560&text=Old+Freight+Office&bgColor=%23e7dcc3&textColor=%231c1a17",
+        "alt": "Sketch of an old freight office terminal among rail yard crates",
+        "caption": "THE TRAIL — Freight Office"
+      }
+    },
+    "hard": {
+      "1": {
+        "url": "https://images.placeholders.dev/?width=900&height=560&text=Ashcombe+Manor&bgColor=%23e7dcc3&textColor=%231c1a17",
+        "alt": "Sketch of Ashcombe Manor's east wing with five guests scattered through the halls",
+        "caption": "THE SCENE — Ashcombe Manor"
+      },
+      "2": {
+        "url": "https://images.placeholders.dev/?width=900&height=560&text=Third+Cipher+Note&bgColor=%23e7dcc3&textColor=%231c1a17",
+        "alt": "Sketch of a third, more elaborate coded note under a desk lamp",
+        "caption": "THE EVIDENCE — Third Note"
+      },
+      "3": {
+        "url": "https://images.placeholders.dev/?width=900&height=560&text=East+Study+Terminal&bgColor=%23e7dcc3&textColor=%231c1a17",
+        "alt": "Sketch of a study terminal beneath a tall east-facing window at dawn",
+        "caption": "THE TRAIL — East Study"
+      }
+    }
+  },
+
+  "conclusions": {
+    "easy": [
+      { "url": "https://images.placeholders.dev/?width=700&height=520&text=Panel+1%3A+The+Scene&bgColor=%23f2ead9&textColor=%231c1a17", "caption": "The scene of the crime — the shattered case, the missing heirloom." },
+      { "url": "https://images.placeholders.dev/?width=700&height=520&text=Panel+2%3A+The+Clue&bgColor=%23f2ead9&textColor=%231c1a17", "caption": "The initial clue — cufflinks dropped in haste, hands that shouldn't be empty." },
+      { "url": "https://images.placeholders.dev/?width=700&height=520&text=Panel+3%3A+The+Interrogation&bgColor=%23f2ead9&textColor=%231c1a17", "caption": "The secondary interrogation — a nervous confession, a lie half-told." },
+      { "url": "https://images.placeholders.dev/?width=700&height=520&text=Panel+4%3A+The+Deduction&bgColor=%23f2ead9&textColor=%231c1a17", "caption": "The deduction — library, cufflinks, butler. Alibi falsified. Case closed." }
+    ],
+    "medium": [
+      { "url": "https://images.placeholders.dev/?width=700&height=520&text=Panel+1%3A+The+Vaults&bgColor=%23f2ead9&textColor=%231c1a17", "caption": "Four vaults, four methods, one crew." },
+      { "url": "https://images.placeholders.dev/?width=700&height=520&text=Panel+2%3A+The+Decoy&bgColor=%23f2ead9&textColor=%231c1a17", "caption": "The fourth vault was a decoy — the real prize still missing." },
+      { "url": "https://images.placeholders.dev/?width=700&height=520&text=Panel+3%3A+The+Order&bgColor=%23f2ead9&textColor=%231c1a17", "caption": "Nadia, Owen, Vivian, Marcus — the order finally falls into place." },
+      { "url": "https://images.placeholders.dev/?width=700&height=520&text=Panel+4%3A+The+Prize&bgColor=%23f2ead9&textColor=%231c1a17", "caption": "The real prize, recovered. Story filed." }
+    ],
+    "hard": [
+      { "url": "https://images.placeholders.dev/?width=700&height=520&text=Panel+1%3A+The+Manor&bgColor=%23f2ead9&textColor=%231c1a17", "caption": "Five guests, five alibis, one manor." },
+      { "url": "https://images.placeholders.dev/?width=700&height=520&text=Panel+2%3A+The+Will&bgColor=%23f2ead9&textColor=%231c1a17", "caption": "The sunrise was always the will — hidden in plain sight." },
+      { "url": "https://images.placeholders.dev/?width=700&height=520&text=Panel+3%3A+The+Study&bgColor=%23f2ead9&textColor=%231c1a17", "caption": "The east study terminal, and the order of five rooms." },
+      { "url": "https://images.placeholders.dev/?width=700&height=520&text=Panel+4%3A+The+Truth&bgColor=%23f2ead9&textColor=%231c1a17", "caption": "Every vault, every cipher, every room. The true will, revealed." }
+    ]
+  }
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<title>THE EVENING CIPHER — Detective RPG</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Old+Standard+TT:ital@0;1&family=Special+Elite&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="masthead">
+  <div class="masthead-top">
+    <span class="masthead-date" id="masthead-date">LATE EDITION</span>
+    <span class="masthead-price">FIVE CENTS</span>
+  </div>
+  <h1 class="masthead-title">THE EVENING CIPHER</h1>
+  <div class="masthead-sub">"ALL THE CLUES FIT FOR PRINT" — DEDUCE THE TRUTH BEFORE THE PRESSES STOP</div>
+  <div class="masthead-rule"></div>
+</div>
+
+<!-- ============================================================
+     LEVEL SELECTION SCREEN (entry point)
+     ============================================================ -->
+<main class="layout" id="level-select-screen">
+  <section class="level-select">
+    <h2 class="level-select-title">Choose Your Assignment</h2>
+    <p class="level-select-sub">Each difficulty is its own case file, with its own chapters and its own memory. Progress in one does not affect the others.</p>
+    <div class="level-cards" id="level-cards"><!-- injected --></div>
+  </section>
+</main>
+
+<!-- ============================================================
+     GAME SCREEN (chapter play) — hidden until a level is chosen
+     ============================================================ -->
+<div id="game-screen" style="display:none;">
+
+  <div class="toolbar">
+    <div class="chapter-tracker" id="chapter-tracker" aria-label="Chapter progress"></div>
+    <div class="toolbar-buttons">
+      <button class="level-select-btn" id="level-select-return-btn">☰ Change Level</button>
+      <button class="new-case-btn" id="restart-btn">☙ Restart Case ❧</button>
+    </div>
+  </div>
+
+  <main class="layout">
+
+    <div class="main-columns">
+
+      <!-- LEFT: NARRATIVE + SCENE ART + DYNAMIC PUZZLE -->
+      <div class="story-column">
+
+        <section class="briefing" id="briefing">
+          <h2 class="briefing-headline" id="briefing-headline">Loading the wire...</h2>
+          <p class="briefing-byline" id="briefing-byline"></p>
+          <div class="briefing-text" id="briefing-text"></div>
+        </section>
+
+        <!-- SCENE VIEWER: dynamically populated per chapter (sketch/comic art) -->
+        <section class="scene-section" aria-label="Case scene illustration">
+          <div id="scene-viewer" class="scene-viewer"></div>
+        </section>
+
+        <!-- PUZZLE MOUNT POINT: contents swapped dynamically per chapter.puzzleType -->
+        <section class="puzzle-section" id="puzzle-section">
+          <h3 class="section-label" id="puzzle-label">Deduction Grid</h3>
+          <div id="puzzle-mount" class="puzzle-mount"></div>
+
+          <div class="grid-actions">
+            <button id="check-btn" class="check-btn">Submit Solution</button>
+            <button id="clear-btn" class="clear-btn">Clear / Reset Chapter</button>
+            <button id="solution-key-btn" class="solution-key-btn">🔑 Check Evidence (Solution Key)</button>
+          </div>
+          <div id="feedback" class="feedback" role="status" aria-live="polite"></div>
+        </section>
+
+      </div>
+
+      <!-- RIGHT: PHONE SIDEBAR -->
+      <aside class="phone-sidebar" aria-label="Detective's phone">
+        <div class="phone-frame">
+          <div class="phone-notch"></div>
+          <div class="phone-header">
+            <span class="phone-header-name" id="phone-header-name">CASE LINE</span>
+            <span class="phone-header-status" id="phone-status">● live</span>
+          </div>
+          <div class="phone-screen" id="phone-screen">
+            <!-- messages injected here -->
+          </div>
+          <div class="phone-home"></div>
+        </div>
+      </aside>
+
+    </div>
+  </main>
+
+</div>
+
+<footer class="footer">
+  <p>© THE EVENING CIPHER — A Detective RPG. No actual crimes were committed in the making of this newspaper.</p>
+</footer>
+
+<script src="data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
