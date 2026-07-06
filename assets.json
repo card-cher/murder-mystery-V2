@@ -1,54 +1,54 @@
 {
-  "_comment": "Maps levelID + chapterIndex to a sketch-style scene image, and levelID to a conclusion comic. All URLs are relative paths into the local /assets folder — place this assets.json alongside index.html, with an assets/ folder next to it containing these exact filenames. Nothing in script.js needs to change to use local files instead of remote placeholders.",
+  "_comment": "Maps levelID + chapterIndex to a sketch-style scene image, and levelID to a conclusion comic. All URLs are relative paths — this assets.json file, along with an 'assetss' folder containing these exact filenames, must sit in the same directory as index.html, served by your local server. Never use absolute filesystem paths (like C:\\Users\\...) here — browsers can only fetch relative URLs from the served folder.",
 
   "scenes": {
     "easy": {
       "1": {
-        "url": "C:\Users\LENOVO\Documents\RANDOM\random project\Isa's Archive of Endless Wonders\random\murder mystery\phase 3\assetss\voss estate library.png",
+        "url": "assetss/voss estate library.png",
         "alt": "Pencil-sketch of the Voss Estate library, a shattered display case at its center",
         "caption": "THE SCENE — Voss Estate Library"
       },
       "2": {
-        "url": "C:\Users\LENOVO\Documents\RANDOM\random project\Isa's Archive of Endless Wonders\random\murder mystery\phase 3\assetss\coded note.png",
+        "url": "assetss/coded note.png",
         "alt": "Sketch of a folded coded note tucked into a coat lining",
         "caption": "THE EVIDENCE — Coded Note"
       },
       "3": {
-        "url": "C:\Users\LENOVO\Documents\RANDOM\random project\Isa's Archive of Endless Wonders\random\murder mystery\phase 3\assetss\dockmaster terminal.png",
+        "url": "assetss/dockmaster terminal.png",
         "alt": "Sketch of a dockmaster's office terminal glowing in a dark harbor building",
         "caption": "THE TRAIL — Wharf Office"
       }
     },
     "medium": {
       "1": {
-        "url": "C:\Users\LENOVO\Documents\RANDOM\random project\Isa's Archive of Endless Wonders\random\murder mystery\phase 3\assetss\blackwood trust vaults.png",
+        "url": "assetss/blackwood trust vaults.png",
         "alt": "Sketch of four breached bank vaults in a dim corridor",
         "caption": "THE SCENE — Blackwood Trust"
       },
       "2": {
-        "url": "C:\Users\LENOVO\Documents\RANDOM\random project\Isa's Archive of Endless Wonders\random\murder mystery\phase 3\assetss\Second Cipher Note.png",
+        "url": "assetss/Second Cipher Note.png",
         "alt": "Sketch of a second coded note pinned to a corkboard",
         "caption": "THE EVIDENCE — Second Note"
       },
       "3": {
-        "url": "C:\Users\LENOVO\Documents\RANDOM\random project\Isa's Archive of Endless Wonders\random\murder mystery\phase 3\assetss\Freight Office Terminal.png",
+        "url": "assetss/Freight Office Terminal.png",
         "alt": "Sketch of an old freight office terminal among rail yard crates",
         "caption": "THE TRAIL — Freight Office"
       }
     },
     "hard": {
       "1": {
-        "url": "C:\Users\LENOVO\Documents\RANDOM\random project\Isa's Archive of Endless Wonders\random\murder mystery\phase 3\assetss\Ashcombe Manor East Hall.png",
+        "url": "assetss/Ashcombe Manor East Hall.png",
         "alt": "Sketch of Ashcombe Manor's east hall with clues scattered about",
         "caption": "THE SCENE — Ashcombe Manor"
       },
       "2": {
-        "url": "C:\Users\LENOVO\Documents\RANDOM\random project\Isa's Archive of Endless Wonders\random\murder mystery\phase 3\assetss\Third Cipher Note.png",
+        "url": "assetss/Third Cipher Note.png",
         "alt": "Sketch of a third, more elaborate coded note under a desk lamp",
         "caption": "THE EVIDENCE — Third Note"
       },
       "3": {
-        "url": "C:\Users\LENOVO\Documents\RANDOM\random project\Isa's Archive of Endless Wonders\random\murder mystery\phase 3\assetss\East Study Terminal.png",
+        "url": "assetss/East Study Terminal.png",
         "alt": "Sketch of a study terminal beneath a tall east-facing window at dawn",
         "caption": "THE TRAIL — East Study"
       }
@@ -57,13 +57,13 @@
 
   "conclusions": {
     "easy": [
-      { "url": "C:\Users\LENOVO\Documents\RANDOM\random project\Isa's Archive of Endless Wonders\random\murder mystery\phase 3\assetss\comic lvl easy.png", "caption": "The full account — from the shattered case to the butler's falsified alibi." }
+      { "url": "assetss/comic lvl easy.png", "caption": "The full account — from the shattered case to the butler's falsified alibi." }
     ],
     "medium": [
-      { "url": "C:\Users\LENOVO\Documents\RANDOM\random project\Isa's Archive of Endless Wonders\random\murder mystery\phase 3\assetss\comic lvl medium.png", "caption": "The full account — from the four vaults to the recovered prize." }
+      { "url": "assetss/comic lvl medium.png", "caption": "The full account — from the four vaults to the recovered prize." }
     ],
     "hard": [
-      { "url": "C:\Users\LENOVO\Documents\RANDOM\random project\Isa's Archive of Endless Wonders\random\murder mystery\phase 3\assetss\comic lvl hard.png", "caption": "The full account — from Ashcombe Manor to the true will, revealed." }
+      { "url": "assetss/comic lvl hard.png", "caption": "The full account — from Ashcombe Manor to the true will, revealed." }
     ]
   }
 }
