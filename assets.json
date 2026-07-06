@@ -1,0 +1,69 @@
+{
+  "_comment": "Maps levelID + chapterIndex to a sketch-style scene image, and levelID to a conclusion comic. All URLs are relative paths into the local /assets folder — place this assets.json alongside index.html, with an assets/ folder next to it containing these exact filenames. Nothing in script.js needs to change to use local files instead of remote placeholders.",
+
+  "scenes": {
+    "easy": {
+      "1": {
+        "url": "assets/voss estate library.png",
+        "alt": "Pencil-sketch of the Voss Estate library, a shattered display case at its center",
+        "caption": "THE SCENE — Voss Estate Library"
+      },
+      "2": {
+        "url": "assets/coded note.png",
+        "alt": "Sketch of a folded coded note tucked into a coat lining",
+        "caption": "THE EVIDENCE — Coded Note"
+      },
+      "3": {
+        "url": "assets/dockmaster terminal.png",
+        "alt": "Sketch of a dockmaster's office terminal glowing in a dark harbor building",
+        "caption": "THE TRAIL — Wharf Office"
+      }
+    },
+    "medium": {
+      "1": {
+        "url": "assets/blackwood trust vaults.png",
+        "alt": "Sketch of four breached bank vaults in a dim corridor",
+        "caption": "THE SCENE — Blackwood Trust"
+      },
+      "2": {
+        "url": "assets/Second Cipher Note.png",
+        "alt": "Sketch of a second coded note pinned to a corkboard",
+        "caption": "THE EVIDENCE — Second Note"
+      },
+      "3": {
+        "url": "assets/Freight Office Terminal.png",
+        "alt": "Sketch of an old freight office terminal among rail yard crates",
+        "caption": "THE TRAIL — Freight Office"
+      }
+    },
+    "hard": {
+      "1": {
+        "url": "assets/Ashcombe Manor East Hall.png",
+        "alt": "Sketch of Ashcombe Manor's east hall with clues scattered about",
+        "caption": "THE SCENE — Ashcombe Manor"
+      },
+      "2": {
+        "url": "assets/Third Cipher Note.png",
+        "alt": "Sketch of a third, more elaborate coded note under a desk lamp",
+        "caption": "THE EVIDENCE — Third Note"
+      },
+      "3": {
+        "url": "assets/East Study Terminal.png",
+        "alt": "Sketch of a study terminal beneath a tall east-facing window at dawn",
+        "caption": "THE TRAIL — East Study"
+      }
+    }
+  },
+
+  "conclusions": {
+    "easy": [
+      { "url": "assets/comic lvl easy.png", "caption": "The full account — from the shattered case to the butler's falsified alibi." }
+    ],
+    "medium": [
+      { "url": "assets/comic lvl medium.png", "caption": "The full account — from the four vaults to the recovered prize." }
+    ],
+    "hard": [
+      { "url": "assets/comic lvl hard.png", "caption": "The full account — from Ashcombe Manor to the true will, revealed." }
+    ]
+  }
+}
